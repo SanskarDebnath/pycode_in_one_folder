@@ -68,6 +68,14 @@ print(obj1.Employee_depertment) #result = 45
 #if i change the value then?
 
 Employee.Employee_depertment = 96
+print(Employee.__dict__)
+
+"""
+__dict__
+return the dictionary only
+{'__module__': '__main__', 'Employee_depertment': 96, '__dict__': <attribute '__dict__' of 'Employee' objects>, '__weakref__': <attribute '__weakref__' of 'Employee' objects>, '__doc__': None}
+
+"""
 
 print(Employee.Employee_depertment) #result = 96 {we can change the class variable value using class name only}
 
