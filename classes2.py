@@ -23,3 +23,16 @@ obj2.sal = 65000
 
 print(obj2.printdetails()) #output : Employee Name is EFGH. Employee salary is 65000
 print(obj1.printdetails()) #output : Employee Name is ABCD. Employee salary is 45000
+
+
+
+"""
+
+what if i remove the self from the printdetails function
+
+print(obj1.printdetails()) 
+
+
+Error: Employee.printdetails() takes 0 positional arguments but 1 was given
+
+"""
