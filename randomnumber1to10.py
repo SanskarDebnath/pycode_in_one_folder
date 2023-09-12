@@ -3,7 +3,7 @@ import csv
 import string
 
 
-just_rand_str = [str(random.randint(1, 2)) for _ in range(100)]
+just_rand_str = [str(random.randint(0 , 1)) for _ in range(100)]
 
 def generate_random_name(length):
     chars = string.ascii_letters
