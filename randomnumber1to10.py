@@ -8,11 +8,11 @@ def generate_random_name(length):
 
 min_num = 100000000000000
 max_num = 999999999999999
-random_numbers = ["TCEA-CN-" + str(random.randint(min_num, max_num)) for _ in range(1000000)]
+random_numbers = ["TCEA-CN-" + str(random.randint(min_num, max_num)) for _ in range(100)]
 print(random_numbers)
 
-num_names = 1000000
-name_length = 10
+num_names = 100
+name_length = 15
 random_names = [generate_random_name(name_length) for _ in range(num_names)]
 print(random_names)
 
@@ -24,5 +24,5 @@ with open("numbers_and_names.csv", "w", newline="") as csvfile:
     for name, number in data:
         file.writerow([name, number])
     print("saved")
-    
-print ("final done")
+
+#print ("final done")
