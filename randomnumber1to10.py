@@ -2,6 +2,9 @@ import random
 import csv
 import string
 
+
+just_rand_str = [str(random.randint(1, 2)) for _ in range(100)]
+
 def generate_random_name(length):
     chars = string.ascii_letters
     return ''.join(random.choice(chars) for _ in range(length))
@@ -16,13 +19,13 @@ name_length = 15
 random_names = [generate_random_name(name_length) for _ in range(num_names)]
 print(random_names)
 
-data = list(zip(random_names, random_numbers))
+data = list(zip(random_names, random_numbers, just_rand_str))
 
 with open("numbers_and_names.csv", "w", newline="") as csvfile:
     file = csv.writer(csvfile)
-    file.writerow(["Name", "Number"])
-    for name, number in data:
-        file.writerow([name, number])
+    file.writerow(["Name", "Number", "Action"])
+    for name, number, action in data:
+        file.writerow([name, number, action])
     print("saved")
 
 #print ("final done")
