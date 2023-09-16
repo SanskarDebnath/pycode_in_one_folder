@@ -24,5 +24,5 @@ print(r2)
 r3 = product(2.6,5.9,6.1)
 print(r3)
 
-r4 = product(2.6,float(5),6.3)
+r4 = product(2.6,float(5),6.3) #we need to convert it in float first
 print(r4)
