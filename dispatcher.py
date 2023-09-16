@@ -1,3 +1,8 @@
+"""
+About Dispatch: In Python, the @dispatch decorator is used to overload functions with different signatures. This is a common pattern in object-oriented programming where multiple methods can have the same name, but different parameters or argument types.
+"""
+
+
 from multipledispatch import dispatch
 
 @dispatch(int,int)
