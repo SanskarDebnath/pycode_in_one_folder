@@ -25,10 +25,6 @@ for _ in tqdm(range(20),
 print("Waiting for installation Package name sanskar 3")
 time.sleep(2.5)
 
-
-
-
-
 print('Downloading Package Name sanskar 4')
 for _ in tqdm(range(50),
     desc="downloading..",
@@ -44,13 +40,6 @@ for _ in tqdm(range(100),
     time.sleep(0.4)
 print("Waiting for installation Package name sanskar 5")
 time.sleep(2)
-
-# print("Downloading Package name sanskar 6")
-# for _ in tqdm(range(60),
-#     desc="downloading...",
-#     ascii=False):
-#     time.sleep(0.6)
-# print("Waiting for installation Package name sanskar 6")
 
 print("Installing All packages")
 time.sleep(10)
