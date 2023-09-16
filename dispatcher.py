@@ -1,0 +1,28 @@
+from multipledispatch import dispatch
+
+@dispatch(int,int)
+def product(a,b):
+    print('multiplication of 2 integers')
+    return(a*b)
+
+@dispatch(int, int, int)
+def product(a,b,c):
+    print('multiplication of 3 integers')
+    return(a*b*c)
+
+@dispatch(float, float, float)
+def product(a,b,c):
+    print('multiplication of 3 floats')
+    return(a*b*c)
+
+r = product(2,5)
+print(r)
+
+r2 = product(2,5,6)
+print(r2)
+
+r3 = product(2.6,5.9,6.1)
+print(r3)
+
+r4 = product(2.6,float(5),6.3)
+print(r4)
